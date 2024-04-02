@@ -1,0 +1,8 @@
+<div class="button-wrapper">
+    <button (click)="deleteTasks()" *ngIf="isDeleteActive$ | async" class="icon-btn" mat-fab>
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button (click)="addTask()" class="icon-btn" mat-fab>
+        <mat-icon>add</mat-icon>
+    </button>
+</div>

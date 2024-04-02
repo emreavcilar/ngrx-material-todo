@@ -1,0 +1,16 @@
+<mat-toolbar class="mt-2">
+  <mat-toolbar-row *ngFor="let item of (todoItems$ | async);" class="d-flex justify-content-between">
+    <div>
+      <mat-checkbox (change)="onCheckboxChange()" [(ngModel)]="selectedIdToDoPairs[item.id]"></mat-checkbox>
+      <span>{{item.task}}</span>
+    </div>
+    <div class="button-wrapper">
+      <button mat-icon-button class="icon-btn favorite-icon" (click)="editToDoItem(item)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button class="icon-btn" (click)="deleteToDoItem(item)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
