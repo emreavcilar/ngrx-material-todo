@@ -7,8 +7,7 @@ import { map, Observable } from 'rxjs';
 import { AddDialogComponent } from '../dialogs/add-dialog/add-dialog.component';
 import { DeleteDialogComponent } from '../dialogs/delete-dialog/delete-dialog.component';
 import { StoreDTO } from '../models/Store';
-import { deleteListAttempt } from '../store/toDo.action';
-import { selectSelectedToDoItemsLength } from '../store/toDo.selectors';
+import { deleteListAttempt, selectSelectedToDoItemsLength } from '../store';
 
 @Component({
   selector: 'app-to-do-buttons',

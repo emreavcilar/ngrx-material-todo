@@ -5,7 +5,7 @@ import { StoreDTO } from 'src/app/models/Store';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
-import { addToDoItemAttempted } from 'src/app/store/toDo.action';
+import { addToDoItemAttempted } from 'src/app/store';
 
 @Component({
   selector: 'edit-dialog',

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { StoreDTO } from '../models/Store';
-import { selectAllToDoItemsLength } from '../store/toDo.selectors';
+import { selectAllToDoItemsLength } from '../store';
 
 @Component({
   selector: 'app-to-do-counter',

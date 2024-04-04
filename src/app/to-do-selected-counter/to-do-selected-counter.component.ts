@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { map, Observable } from 'rxjs';
 import { StoreDTO } from '../models/Store';
-import { selectSelectedToDoItemsLength } from '../store/toDo.selectors';
+import { selectSelectedToDoItemsLength } from '../store';
 
 @Component({
   selector: 'app-to-do-selected-counter',

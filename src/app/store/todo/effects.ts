@@ -1,9 +1,24 @@
+/*
+I am not familiar to effects and selectors classes as in React they are not used.
+As I've learned effects class is used to handling side effects like async actions. 
+In React side effectsare managed differently 
+
+With Redux - We use middlewares like Thunk or Redux Saga etc. So actions are directly
+can be used in actions classes 
+
+Without Redux - We use useEffect hook to manage sideeffects in classes 
+
+I think this difference comes from Framework vs Library. Angular is a framework but 
+React is a compact library. 
+
+*/
+
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { Store } from "@ngrx/store";
 import { map, switchMap, tap, withLatestFrom } from "rxjs";
-import { StoreDTO } from "../models/Store";
-import { ApiService } from "../services/api.service";
+import { StoreDTO } from "../../models/Store";
+import { ApiService } from "../../services/api.service";
 import {
     addToDoItem,
     addToDoItemAttempted,
@@ -17,8 +32,8 @@ import {
     setLoading,
     setTodoList,
     updateSelectedToDos
-} from "./toDo.action";
-import { selectSelectedToDoItemsIds } from "./toDo.selectors";
+} from "./actions";
+import { selectSelectedToDoItemsIds } from "./selectors";
 
 @Injectable()
 export class ToDoListEffects {
