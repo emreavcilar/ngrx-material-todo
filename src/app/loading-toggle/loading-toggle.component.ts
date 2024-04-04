@@ -4,7 +4,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { StoreDTO } from '../models/Store';
-import { selectLoading } from '../store/toDo.selectors';
+import { selectLoading } from '../store';
 
 @Component({
   selector: 'app-loading-toggle',

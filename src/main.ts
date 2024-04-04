@@ -5,8 +5,13 @@ import { AppComponent } from './app/app.component';
 import { provideStore } from '@ngrx/store';
 import { provideEffects } from '@ngrx/effects';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { editToDoStateReducer, loadingStateReducer, selectedToDoListReducer, toDoListItemsReducer } from './app/store/toDo.reducer';
-import { ToDoListEffects } from './app/store/toDo.effects';
+import { 
+    editToDoStateReducer, 
+    loadingStateReducer, 
+    selectedToDoListReducer, 
+    toDoListItemsReducer,
+    ToDoListEffects
+} from './app/store';
 
 bootstrapApplication(AppComponent, {
     providers: [

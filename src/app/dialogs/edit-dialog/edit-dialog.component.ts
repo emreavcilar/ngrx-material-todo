@@ -7,7 +7,7 @@ import { map, Subscription } from 'rxjs';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
-import { editToDoItem, editToDoItemAttempted } from 'src/app/store/toDo.action';
+import { editToDoItem, editToDoItemAttempted } from 'src/app/store';
 
 @Component({
   selector: 'edit-dialog',
